@@ -1,0 +1,249 @@
+/*****************
+COMMON
+*******************/
+html,
+body {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  min-height: 80vh;
+}
+
+/*****************
+Header
+*******************/
+
+header {
+  display: flex;
+  background-color: #003664;
+  justify-content: space-between;
+  color: #64c2ee;
+  font-family: Avenir;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+header .logo {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: flex-start;
+  width: 70%;
+}
+header .logo .budget {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1px;
+}
+
+header .links {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  padding: 0px 10px;
+}
+
+header .links p {
+  padding: 0px 20px;
+}
+
+@media screen and (max-width: 500px) {
+  header .logo {
+    padding: 28px 17px;
+    width: 90%;
+  }
+  header .links {
+    padding: 20px 22px;
+    width: 40%;
+  }
+
+  header .links .sign_up {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+}
+
+/* Main */
+
+.main .background {
+  width: 100%;
+}
+
+.main .background .bg-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.main .background .cover-div {
+  background-color: #000000;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.main .p1 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  z-index: 2;
+}
+
+.main .p1 p {
+  color: #faf4f4;
+  font-family: Avenir;
+  width: 100%;
+  font-size: 3.5em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.main .p2 {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  z-index: 2;
+}
+
+.main .p2 p {
+  color: #faf4f4;
+  font-family: Avenir;
+  width: 100%;
+  font-size: 2em;
+  margin: 0;
+}
+
+.main .form {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  z-index: 2;
+}
+
+.main .form form {
+  width: 200px;
+  margin: 0;
+  font-family: Avenir;
+}
+
+.main .form form label {
+  color: #f8f5f5;
+  float: left;
+  padding: 10px;
+}
+
+.main .form form input {
+  float: left;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 180px;
+  background-color: #c2d7e2;
+}
+
+.main .form form .submit-btn {
+  width: 100px;
+  margin: 10px 0px;
+  padding: 10px;
+  color: #003664;
+  font-family: Avenir;
+  background-color: #f8f5f5;
+}
+
+/**************************************
+SignIn
+****************************************/
+
+body .sign-in {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.sign-in .p1 {
+  position: absolute;
+  width: 40%;
+  margin: 0;
+  top: 15%;
+  left: 30%;
+  color: black;
+  font-family: Avenir;
+}
+
+.sign-in .p1 p {
+  margin: 0;
+  font-size: 4vw;
+  text-align: center;
+  color: #003664;
+  font-weight: bold;
+}
+
+.sign-in .p2 {
+  position: absolute;
+  width: 40%;
+  margin: 0;
+  top: 45%;
+  left: 30%;
+}
+
+.sign-in .p2 p {
+  margin: 0;
+  text-align: center;
+  color: #003664;
+  font-size: 2vw;
+}
+
+.sign-in .form {
+  position: absolute;
+  width: 20%;
+  margin: 0 auto;
+  top: 65%;
+  left: 40%;
+  background: #64c2ee;
+  z-index: 3;
+}
+
+.sign-in .form form {
+  width: 180px;
+  margin: 35px auto;
+}
+
+.sign-in .form form label {
+  font-family: Avenir;
+  padding: 10px 0px;
+  margin: 10px auto;
+}
+
+.sign-in .form form input {
+  font-family: Avenir;
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.sign-in .form form .login-btn {
+  width: 40%;
+  padding: 5px;
+  background-color: #003664;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .sign-in .form {
+    width: 80%;
+    left: 10%;
+  }
+
+  .sign-in .p1 p {
+    width: 100%;
+    font-size: 6vw;
+  }
+}
